@@ -1,0 +1,80 @@
+<apex:page controller="newOpportunityController" action="{!getFieldType}">
+  <script>
+  function confirmCancel() {
+      var isCancel = confirm("Are you sure you wish to cancel?");
+      if (isCancel) return true;
+  
+     return false;
+  }  
+  </script>
+  <apex:sectionHeader title="New Customer Opportunity" subtitle="Step 3 of 3"/>
+  <apex:form >
+    <apex:pageBlock title="Confirmation">
+      <apex:pageBlockButtons >
+          <apex:commandButton action="{!step2}" value="Previous"/>
+          <apex:commandButton value="Cancel" onclick="return confirmCancel()" immediate="true"/>
+      </apex:pageBlockButtons>
+      
+      <apex:pageBlockTable value="{!listWrap}" var="item">
+          <apex:column >
+
+                             <apex:facet name="header">Sr. No.</apex:facet>
+
+                                 {!item.srNm}
+
+                         </apex:column>
+
+                        
+
+                         <apex:column >
+
+                             <apex:facet name="header">API Name</apex:facet>
+
+                                 {!item.NameOfField}
+
+                         </apex:column>
+
+                        
+
+                         <apex:column >
+
+                             <apex:facet name="header">Label</apex:facet>
+
+                                 {!item.LabelOfField}
+
+                         </apex:column>
+
+                        
+
+                         <apex:column >
+
+                             <apex:facet name="header">Length</apex:facet>
+
+                                 {!item.LengthOfField}
+
+                         </apex:column>
+
+                        
+
+                         <apex:column >
+
+                             <apex:facet name="header">Editable</apex:facet>
+
+                                 {!item.updatable}
+
+                         </apex:column>
+
+                        
+
+                         <apex:column >
+
+                             <apex:facet name="header">Accessable</apex:facet>
+
+                                 {!item.accessable}
+
+                         </apex:column>
+      </apex:pageBlockTable>
+      
+          </apex:pageBlock>
+  </apex:form>
+</apex:page>

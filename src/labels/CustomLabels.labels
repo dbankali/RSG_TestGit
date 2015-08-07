@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Exception_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Exception Message</shortDescription>
+        <value>An error has occurred in the translation process . Please contact your system administrator:</value>
+    </labels>
+    <labels>
+        <fullName>MS_Oath_URL_Endpoint</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS Oath URL Endpoint</shortDescription>
+        <value>https://datamarket.accesscontrol.windows.net/v2/OAuth2-13</value>
+    </labels>
+    <labels>
+        <fullName>MS_Url_Endpoint</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MS Url Endpoint</shortDescription>
+        <value>http://api.microsofttranslator.com/v2/Http.svc/Translate?</value>
+    </labels>
+    <labels>
+        <fullName>MS_Url_Scope</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MS Url Scope</shortDescription>
+        <value>http://api.microsofttranslator.com</value>
+    </labels>
+    <labels>
+        <fullName>fromLang</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>fromLang</shortDescription>
+        <value>fromLang</value>
+    </labels>
+    <labels>
+        <fullName>toLang</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>toLang</shortDescription>
+        <value>toLang</value>
+    </labels>
+</CustomLabels>

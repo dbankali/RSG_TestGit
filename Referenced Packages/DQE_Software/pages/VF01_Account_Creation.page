@@ -1,0 +1,68 @@
+<apex:page Title="{!$Label.dqe_software__DQE_NewAccountPageTitle}" standardController="Account" tabstyle="Account" extensions="DQE_Software.AP01_CreateAccount">
+	<apex:sectionHeader title="{!$Label.dqe_software__DQE_NewAccountHeaderTitle}" subtitle="{!$Label.dqe_software__DQE_HeaderSubtitleStep1}" rendered="{!showSF}" id="Header1"/>
+	<apex:outputtext value="{!Account.DQE_Software__API_URL__c}" rendered="false"></apex:outputtext>
+		<apex:form id="form1">
+			<apex:pageBlock title="{!$Label.dqe_software__DQE_NewAccountPageBlockTitle}" id="block1" rendered="{!showSF}" mode="Edit">
+				<apex:message />
+			    <apex:pageBlockButtons >
+					<apex:commandButton value="{!$Label.dqe_software__DQE_Next}" action="{!NextStep}" >
+						<apex:actionSupport event="onclick"
+	                                rerender="block2,block1,header1,header2"/>	
+                    </apex:commandButton>
+		            <apex:commandButton value="{!$Label.dqe_software__DQE_Cancel}" action="{!ReturnAccountListView}" immediate="true"/>
+		        </apex:pageBlockButtons>
+	
+				<apex:pageblockSection Title="{!$Label.dqe_software__DQE_Account_information}" collapsible="false">
+                   <apex:OutputText value="{!NewAccount.Id}" id="Account_Id" rendered="false"/>
+                   <apex:OutputText value="{!NewAccount.OwnerId}" id="Account_Owner"/> 
+                   <apex:inputField value="{!NewAccount.DQE_Software__Active__c}" id="Account_Active" />
+                   <apex:inputField value="{!NewAccount.Name}" id="Account_Name" />
+                   <apex:inputField value="{!NewAccount.DQE_Software__UpsellOpportunity__c}" id="Account_UpsellOpportunity" />  
+                   <apex:inputField value="{!NewAccount.ParentId}" id="Account_Parent" />  
+                   <apex:inputField value="{!NewAccount.Type}" id="Account_Type" />  
+                   <apex:inputField value="{!NewAccount.AccountNumber}" id="Account_Number" />  
+                   <apex:inputField value="{!NewAccount.Rating}" id="Account_Rating" />  
+                   <apex:inputField value="{!NewAccount.Site}" id="Account_Site" />  
+                   <apex:inputField value="{!NewAccount.Phone}" id="Account_Phone" />  
+                   <apex:inputField value="{!NewAccount.Industry}" id="Account_Industry" />
+                   <apex:inputField value="{!NewAccount.Fax}" id="Account_Fax" />  
+                   <apex:inputField value="{!NewAccount.Sic}" id="Account_Sic" />  
+                   <apex:inputField value="{!NewAccount.Website}" id="Account_Website" />  
+                   <apex:inputField value="{!NewAccount.AnnualRevenue}" id="Account_AnnualRevenue" />  
+                   <apex:inputField value="{!NewAccount.TickerSymbol}" id="Account_TickerSymbol" />  
+                   <apex:inputField value="{!NewAccount.NumberOfEmployees}" id="Account_NumberOfEmployees" />  
+                   <apex:inputField value="{!NewAccount.Ownership}" id="Account_Ownership" />
+                   <apex:inputField value="{!NewAccount.DQE_Software__NumberofLocations__c}" id="Account_NumberofLocations" />  
+				</apex:pageblockSection>
+				
+				<apex:pageblockSection Title="{!$Label.dqe_software__DQE_Additional_Information}" collapsible="false">
+               	   <apex:inputField value="{!NewAccount.DQE_Software__CustomerPriority__c}" id="Account_CustomerPriority"/> 
+               	   <apex:inputField value="{!NewAccount.DQE_Software__SLA__c}" id="Account_SLA"/>
+                   <apex:inputField value="{!NewAccount.DQE_Software__SLAExpirationDate__c}" id="Account_SLAExpirationDate"/>
+                   <apex:inputField value="{!NewAccount.DQE_Software__SLASerialNumber__c}" id="Account_SLASerialNumber"/>  
+				</apex:pageblockSection>
+				
+				<apex:pageblockSection Title="{!$Label.dqe_software__DQE_Description_Information}" columns="2" collapsible="false">
+	                  	<apex:PageblockSectionItem >
+	                   		<apex:outputLabel value="Description" for="Account_Description" />
+	                   		<apex:inputTextArea cols="75" rows="7" value="{!NewAccount.Description}" id="Account_Description" />
+	                  	</apex:PageblockSectionItem>
+	                  	
+				</apex:pageblockSection>
+			</apex:pageBlock>
+		</apex:form>
+		
+		<apex:sectionHeader title="{!$Label.dqe_software__DQE_NewAccountHeaderTitle}" subtitle="{!$Label.dqe_software__DQE_HeaderSubtitleStep2}" rendered="{!showDQE}" id="Header2"/>
+		<apex:form id="form2">
+			<apex:pageBlock id="block2" rendered="{!showDQE}">
+			<apex:message for="buttons"/>
+				  <apex:pageBlockButtons location="top" id="buttons">
+			            <apex:commandButton value="{!$Label.dqe_software__DQE_Save}" action="{!ReturnAccountView}" id="SaveButton" immediate="true"/>
+			            <apex:commandButton value="{!$Label.dqe_software__DQE_SaveAndNew}" action="{!SaveNew}"/>
+			            <apex:commandButton value="{!$Label.dqe_software__DQE_Back}" action="{!backStep1}"/>
+			            <apex:commandButton value="{!$Label.dqe_software__DQE_Cancel}" action="{!CancelAccountCreation}"/>			            
+			      </apex:pageBlockButtons>
+				 <apex:iframe src="{!DQE_Software_URL}" scrolling="true" width="100%" height="450px" id="DQEIframe"/>
+			</apex:pageBlock>
+		</apex:form>
+</apex:page>

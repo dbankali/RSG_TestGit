@@ -1,0 +1,11 @@
+<apex:page standardController="Account" title="{!$Label.dqe_software__DQE_AddressAccountPageTitle}" extensions="DQE_Software.AP01_CreateAccount" tabStyle="Account">
+	<apex:outputtext value="{!Account.DQE_Software__API_URL__c}" rendered="false"></apex:outputtext>
+	<apex:form id="form1">
+		<apex:pageBlock title="{!$Label.dqe_software__DQE_AddressSearch}" id="block1">
+			<apex:pageBlockButtons location="top" id="buttons">
+		            <apex:commandButton value="{!$Label.dqe_software__DQE_ReturnAccount}" action="{!ReturnAccountView}" id="ReturnButton"/>
+			</apex:pageBlockButtons>		
+			<apex:iframe src="{!DQE_Software_URL}" scrolling="true" width="100%" height="450px" id="DQEIframe"/>
+		</apex:pageBlock>
+	</apex:form>
+</apex:page>

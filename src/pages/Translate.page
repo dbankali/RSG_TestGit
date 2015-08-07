@@ -1,0 +1,13 @@
+<apex:page standardcontroller="Project__c" extensions="Translate">
+<apex:form >
+<apex:pageBlock >
+<apex:pageBlockButtons >
+<apex:commandButton action="{!translateRecord}" value="Translate" />
+<apex:commandButton value="Cancel" action="{!Cancel}"/>
+</apex:pageBlockButtons>
+<apex:pageblockSection >
+<apex:inputfield value="{!langObj.Language__c}" required="true"/>
+</apex:pageblockSection>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

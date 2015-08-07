@@ -1,0 +1,11 @@
+<apex:page controller="searchTwitterController" action="{!twittersearch}">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockTable value="{!lstTweets}" var="varTweets">
+                <apex:column >
+                    <td>{!varTweets}</td>
+                </apex:column>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,9 @@
+<apex:page controller="TableController" wizard="true">
+ <apex:pageblock >
+   <apex:pageblocktable value="{!accList}" var="a">
+    <apex:column headervalue="Account Name" value="{!a.Name}"/>
+    <apex:column headervalue="Account Type" value="{!a.type}"/>
+    <apex:column headervalue="Industry" value="{!a.industry}"/>
+   </apex:pageblocktable>
+ </apex:pageblock>
+</apex:page>

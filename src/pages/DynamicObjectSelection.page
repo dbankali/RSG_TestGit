@@ -1,0 +1,38 @@
+<apex:page controller="newOpportunityController">
+  <script>
+  function confirmCancel() {
+      var isCancel = confirm("Are you sure you wish to cancel?");
+      if (isCancel) return true;
+  
+     return false;
+  }  
+  </script>
+  <apex:sectionHeader title="Object Rerender" subtitle="Step 1 of 3"/>
+    <apex:form >
+      <apex:pageBlock mode="edit">
+
+        <!-- The pageBlockButtons tag defines the buttons that appear at the top
+             and bottom of the pageBlock. Like a facet, it can appear anywhere in
+             a pageBlock, but always defines the button areas.-->
+        <!-- The Next button contained in this pageBlockButtons area
+             calls the step2 controller method, which returns a pageReference to
+             the next step of the wizard. -->
+        <apex:pageBlockButtons >
+          <apex:commandButton action="{!step2}" value="Next"/>
+          <apex:commandButton value="Cancel" 
+                              onclick="return confirmCancel()" immediate="true"/>
+        </apex:pageBlockButtons>
+      <apex:pageBlockSection title="Select Type Of Object" >
+
+        <!-- Within a pageBlockSection, inputFields always display with their
+             corresponding output label. -->
+             <apex:outputPanel style="padding-left:75%;">
+        <apex:selectList id="accts" size="1" value="{!val}">
+        <apex:selectOptions value="{!accts}"></apex:selectOptions>
+        </apex:selectList>
+        </apex:outputPanel>
+      </apex:pageBlockSection>
+      
+    </apex:pageBlock>
+  </apex:form>
+</apex:page>

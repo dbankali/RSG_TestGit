@@ -1,0 +1,30 @@
+<apex:page controller="newOpportunityController">
+  <script>
+  function confirmCancel() {
+      var isCancel = confirm("Are you sure you wish to cancel?");
+      if (isCancel) return true;
+  
+     return false;
+  }  
+  </script>
+  <apex:sectionHeader title="Select Object" subtitle="Step 2 of 3"/>
+  <apex:form >
+    <apex:pageBlock mode="edit">
+      <apex:pageBlockButtons >
+        <apex:commandButton action="{!step1}" value="Previous"/>
+        <apex:commandButton action="{!step3}" value="Next"/>
+        <apex:commandButton value="Cancel" 
+                            onclick="return confirmCancel()" immediate="true"/>
+      </apex:pageBlockButtons>
+      
+        <apex:pageBlockSection >
+            <apex:outputPanel style="padding-left:50%;">
+        <apex:selectList id="accts2" size="1" value="{!val2}">
+        <apex:selectOptions value="{!objectList}"></apex:selectOptions>
+        </apex:selectList>
+        </apex:outputPanel>
+        </apex:pageBlockSection>
+      
+    </apex:pageBlock>
+  </apex:form>
+</apex:page>

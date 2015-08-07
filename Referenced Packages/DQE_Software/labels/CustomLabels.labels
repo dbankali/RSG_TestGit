@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>DQE_Account_information</fullName>
+        <categories>DQE Software</categories>
+        <language>fr</language>
+        <protected>true</protected>
+        <shortDescription>Account information</shortDescription>
+        <value>Acccount Information</value>
+    </labels>
+    <labels>
+        <fullName>DQE_Additional_Information</fullName>
+        <categories>DQE Software</categories>
+        <language>fr</language>
+        <protected>true</protected>
+        <shortDescription>Additional Information</shortDescription>
+        <value>Additional Information</value>
+    </labels>
+    <labels>
+        <fullName>DQE_AddressAccountPageTitle</fullName>
+        <categories>DQE Software</categories>
+        <language>fr</language>
+        <protected>true</protected>
+        <shortDescription>AddressAccountPageTitle</shortDescription>
+        <value>Account Edit: Address Search</value>
+    </labels>
+    <labels>
+        <fullName>DQE_AddressSearch</fullName>
+        <categories>DQE Software</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Address Search</shortDescription>
+        <value>Search an address</value>
+    </labels>
+    <labels>
+        <fullName>DQE_Back</fullName>
+        <categories>DQE Software</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Back</shortDescription>
+        <value>Back</value>
+    </labels>
+    <labels>
+        <fullName>DQE_CRUDErrorMessage</fullName>
+        <categories>DQE Software</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DQE_CRUDErrorMessage</shortDescription>
+        <value>Insufficient access</value>
+    </labels>
+    <labels>
+        <fullName>DQE_Cancel</fullName>
+        <categories>DQE Software</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Cancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>DQE_Description_Information</fullName>
+        <categories>DQE Software</categories>
+        <language>fr</language>
+        <protected>true</protected>
+        <shortDescription>Description Information</shortDescription>
+        <value>Description Information</value>
+    </labels>
+    <labels>
+        <fullName>DQE_HeaderSubtitleStep1</fullName>
+        <categories>DQE Software</categories>
+        <language>fr</language>
+        <protected>true</protected>
+        <shortDescription>HeaderSubtitleStep1</shortDescription>
+        <value>New Account - Step 1</value>
+    </labels>
+    <labels>
+        <fullName>DQE_HeaderSubtitleStep2</fullName>
+        <categories>DQE Software</categories>
+        <language>fr</language>
+        <protected>true</protected>
+        <shortDescription>HeaderSubtitleStep2</shortDescription>
+        <value>New Account - Step 2</value>
+    </labels>
+    <labels>
+        <fullName>DQE_Id_Client</fullName>
+        <categories>DQE Software</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DQE Id Client</shortDescription>
+        <value>SF001010</value>
+    </labels>
+    <labels>
+        <fullName>DQE_NewAccountHeaderTitle</fullName>
+        <categories>DQE Software</categories>
+        <language>fr</language>
+        <protected>true</protected>
+        <shortDescription>NewAccountHeaderTitle</shortDescription>
+        <value>Account Edit</value>
+    </labels>
+    <labels>
+        <fullName>DQE_NewAccountPageBlockTitle</fullName>
+        <categories>DQE Software</categories>
+        <language>fr</language>
+        <protected>true</protected>
+        <shortDescription>NewAccountPageBlockTitle</shortDescription>
+        <value>Account Edit</value>
+    </labels>
+    <labels>
+        <fullName>DQE_NewAccountPageTitle</fullName>
+        <categories>DQE Software</categories>
+        <language>fr</language>
+        <protected>true</protected>
+        <shortDescription>NewAccountPageTitle</shortDescription>
+        <value>Account Edit: New Account</value>
+    </labels>
+    <labels>
+        <fullName>DQE_Next</fullName>
+        <categories>DQE Software</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Next</shortDescription>
+        <value>Next</value>
+    </labels>
+    <labels>
+        <fullName>DQE_ReturnAccount</fullName>
+        <categories>DQE Software</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Return Account</shortDescription>
+        <value>Return to the Account</value>
+    </labels>
+    <labels>
+        <fullName>DQE_Save</fullName>
+        <categories>DQE Software</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Save</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>DQE_SaveAndNew</fullName>
+        <categories>DQE Software</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SaveAndNew</shortDescription>
+        <value>Save &amp; New</value>
+    </labels>
+    <labels>
+        <fullName>DQE_URL</fullName>
+        <categories>DQE Software</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DQE URL</shortDescription>
+        <value>https://www.dqe-software.com/salesforce</value>
+    </labels>
+    <labels>
+        <fullName>DQE_missingAddressError</fullName>
+        <categories>DQE Software</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DQE_missingAddressError</shortDescription>
+        <value>Please add an address to your account to save it.</value>
+    </labels>
+    <labels>
+        <fullName>DQE_updateAccountError</fullName>
+        <categories>DQE Software</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>updateAccountError</shortDescription>
+        <value>Update account error.</value>
+    </labels>
+    <labels>
+        <fullName>DQE_updateAccountSuccessful</fullName>
+        <categories>DQE Software</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>updateAccountSuccessful</shortDescription>
+        <value>Account has been updated successfully.</value>
+    </labels>
+</CustomLabels>
